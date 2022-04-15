@@ -9,6 +9,7 @@ function WelcomeScreen({navigation, route}){
     React.useEffect(() => {
         setListData(global.FilteredContacts);
     }, [global.FilteredContacts]);
+    
     let row = new Array();
     let prevOpenedRow;
     const renderItem = ({ item, index }, onClick) => {
